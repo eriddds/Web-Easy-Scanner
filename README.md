@@ -13,7 +13,7 @@
 ![eg](https://github.com/user-attachments/assets/b900d723-6ffa-4bc5-ae77-f87a229db79e)
 
 # 项目网站地址：
-## wes.xiao-es.top -暂时暂停服务
+## https://eriddds.github.io/Web-Easy-Scanner/ -暂时暂停服务
 
 ## 扫描的项目
 
