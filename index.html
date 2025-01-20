@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>产品介绍官网</title>
+    <style>
+        body{
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f7f7f7;
+            font-family: Arial, sans-serif;
+            background-image: url('img/5.png'); /* 添加背景图片 */
+            background-size: cover; /* 覆盖整个页面 */
+            background-position: center; /* 居中背景图片 */
+            background-attachment: fixed;
+        }
+        .header{
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        .container{
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 40px;
+        }
+        .product-intro{
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            text-align: center;
+            opacity: 0.8;
+        }
+        .product-intro h2{
+            margin-bottom: 20px;
+            font-size: 28px;
+            color: #333;
+        }
+        .product-intro p{
+            font-size: 16px;
+            line-height: 1.6;
+            color: #666;
+        }
+        .product-image{
+            max-width: 100%;
+            height: auto;
+            border-radius: 8px;
+            margin-top: 30px;
+            transition: transform 0.5s ease-in-out;
+        }
+        .product-image:hover{
+            transform: scale(1.05);
+        }
+        .features{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 40px;
+        }
+        .feature{
+            background-color: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            margin: 10px;
+            text-align: center;
+            width: calc(33.333% - 20px);
+            transition: transform 0.5s ease-in-out;
+        }
+        .feature:hover{
+            transform: translateY(-10px);
+        }
+        .feature h3{
+            font-size: 20px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        .feature p{
+            font-size: 14px;
+            color: #666;
+        }
+        .footer{
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 20px;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        @keyframes fadeIn{
+            from{opacity: 0;}
+            to{opacity: 0.8;}
+        }
+        .fade-in{
+            animation: fadeIn 1s ease-in-out;
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            font-size: 16px;
+            font-weight: bold;
+            text-align: center;
+            text-decoration: none;
+            background-color: #4CAF50;
+            color: white;
+            border-radius: 5px;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+
+        /* 按钮点击时的动画效果 */
+        .btn:active {
+            background-color: #45a049;
+            transform: scale(0.95);
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Welcome!!!</h1>
+        <!-- 添加投稿按钮 -->
+        <div class="submit-button fade-in">
+            <a href="submit.html" class="btn">投稿漏洞或版本poc</a>
+        </div>
+    </div>
+    <div class="container">
+        <div class="product-intro fade-in">
+            <h2>Web Easy Scanner</h2>
+            <div class="submit-button fade-in">
+                <a href="https://github.com/eriddds/Web-Easy-Scanner" target="_blank" class="btn">GitHub下载</a>
+            </div>
+            <p>这是一款漏洞扫描工具，使用python语言编写，可以进行扫描端口,漏洞等等。</p>
+            <img src="img/eg.png" alt="产品图片" class="product-image">
+        </div>
+        <div class="features fade-in">
+            <div class="feature">
+                <h3>功能一</h3>
+                <p>扫描目标端口获得开放端口</p>
+            </div>
+            <div class="feature">
+                <h3>功能二</h3>
+                <p>扫描漏洞并报告漏洞版本信息或位置</p>
+            </div>
+            <div class="feature">
+                <h3>功能三</h3>
+                <p>可以配合GoSafety自动化渗透工具使用，这个渗透工具还在开发研发中，由ES单人研发。</p>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="product-intro fade-in">
+            <div class="product-image">
+                <h1>支持的漏洞版本：</h1>
+                <h2>weblogic:<br />
+                    cve_2014_4210 cve_2016_0638<br />
+                    cve_2016_3510 cve_2017_3248<br />
+                    cve_2017_3506 cve_2017_10271<br />
+                    cve_2018_2628 cve_2018_2893<br />
+                    cve_2018_2894 cve_2018_3191<br />
+                    cve_2018_3245 cve_2018_3252<br />
+                    cve_2019_2618 cve_2019_2725<br />
+                    cve_2019_2729 cve_2019_2888<br />
+                    cve_2019_2890 cve_2020_2551<br />
+                    cve_2020_2555 cve_2020_2883<br />
+                    cve_2020_14750 cve_2020_14882<br />
+                    cve_2020_14883 CVE_2019_1725<br />
+                    ssrf</h2><br />
+                <hr>
+                <h2>jboss:<br />
+                    jmx-console web-console<br />
+                    admin-console CVE-2015-7501<br />
+                    CVE-2017-7504 CVE-2017-12149<br />
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="footer fade-in">
+        <p>ES版权所有 © 2025</p>
+    </div>
+    <script>
+        // 此处可以添加一些简单的交互逻辑，例如点击事件等
+        document.querySelector('.product-image').addEventListener('click', function(){
+            alert('感谢您对产品的关注！');
+        });
+    </script>
+</body>
+</html>
