@@ -27,6 +27,9 @@
 
 # 详情
 
+# 项目网站：
+## https://eriddds.github.io/Web-Easy-Scanner/
+
 在每次扫描后针对与weblogic都会生成一个weblogicscanner文件，里面会记录weblogic的漏洞扫描信息
 本脚本属于针对于有域名的网址进行扫描工作，如果有端口号可能无法进行完整的扫描工作
 # Web-Easy-Scanner
