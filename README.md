@@ -10,6 +10,8 @@
 
 # 渗透测试脚本
 
+## 使用"Download_support_library.py"来下载该程序所需要的Python支持库
+
 ## 扫描的项目
 
 - [x] 端口扫描
